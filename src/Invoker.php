@@ -51,6 +51,6 @@ final class Invoker implements InvokerInterface
         }
         ($this->logger)($response);
 
-        return $response;
+        return clone $response;
     }
 }
